@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.player__wrapper{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 auto;
+  width: 50%;
+  justify-content: space-between;
+  height: 30%;
+  /* border: 3px solid green; */
+
 }
 
-.App-link {
-  color: #61dafb;
+.div__player{
+  display: block;
+  height: 15rem;
+  /* border-style: solid; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.zero{
+  width: 50px;
+  height: 50px;
+  border: 7px solid green;
+  border-radius: 50%;
+  margin: 15px auto;
+  /* border-style: solid; */
 }
+
+.cross{
+  width: 50px;
+  height: 50px;
+  /* border-style: solid; */
+  margin: 15px auto;
+}
+.scross{
+  display: block;
+  height: 7px;
+  width: 65px;
+  background-color: black;
+  /* border-style:dotted; */
+  rotate: -45deg;
+  translate: -7px 14px;
+  /* transform: translateY(18px) rotate(45deg); */
+}
+
+
+.fcross{
+  display: block;
+  height: 7px;
+  width: 65px;
+  background-color: black;
+  /* border-style:dotted; */
+  rotate: 45deg;
+  translate: -7px 22px;
+  /* transform: translateY(18px) rotate(45deg); */
+}
+
+
+
+
+
+.gridContainer{
+  margin: 100px auto;
+  width: 50%;
+  /* border: 3px solid green; */
+  padding: 10px;
+}
+
+.grid{
+  margin: auto;
+  width: 400px;
+  padding: 10px;
+}
+
+.gridRow{
+  display: flex;
+}
+.gridbtn{
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.tborder{
+  border-top:  solid;
+}
+
+.rborder{
+  border-right:  solid;
+}
+.bborder{
+  border-bottom:  solid;
+}
+.lborder{
+  border-left:  solid;
+}
+
